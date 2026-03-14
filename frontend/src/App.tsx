@@ -1,11 +1,15 @@
-
+// App.tsx
 import './App.css'
+import Header from './Header' // 1. Import the new header
 import BowlerList from './BowlerList'
-function App() {
 
+function App() {
   return (
     <>
-      <BowlerList/>
+      <Header />      {/* 2. Add the component here */}
+      <div className="container"> 
+        <BowlerList />
+      </div>
     </>
   )
 }
